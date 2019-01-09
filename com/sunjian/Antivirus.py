@@ -21,10 +21,10 @@ import shutil
 print '#'*20+'欢迎使用sunjian杀毒软件'+"#"*20
 
 path = raw_input('告诉我你要杀毒的路径（如：C:/Users/Administrator/desktop）')#要杀毒的路径
-#killContents = raw_input('告诉我你要kill掉的内容（如：abc）')
+killContents = raw_input('告诉我你要kill掉的内容（如：abc）')
 raw_input('警告：这是删除操作，请客观慎重三思而后行啊...')
 
-print '愉快的删除中...'
+print '正在愉快的帮您删除包含-->'+killContents+'<--的文件和文件夹...'
 #（利用os模块中的walk函数实现）返回路径下所有的目录中的文件列表
 def dirList2(path):
     try:
